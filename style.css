@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #ecebe9;
+}
+
+.container{
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #ecebe9;
+
+}
+/* -------------main-heading------------- */
+.main-heading{
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #222;
+}
+/* ----------buttons---------- */
+.button-1{
+    width: 120px;
+    background: #222;
+    color: #fff;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+    border: 1.5px solid #222;
+    cursor: pointer;
+}
+.button-1:hover{
+    background: rgb(238, 238, 238);
+    color: #222;
+    border: 1.5px solid #222;
+}
+
+.button-2{
+    background: rgb(238, 238, 238);
+    color: #222;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+    border: 1.5px solid #222;
+    cursor: pointer;
+}
+.button-2:hover{
+    background: #222;
+    color: #fff;
+    border: 1.5px solid #222;
+}
+/* ----------Navbar------------ */
+nav{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 9px;
+}
+.profile h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #222;
+}
+.menu-links ul{
+    display: flex;
+}
+.menu-links ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+.menu-links ul li a{
+    text-decoration: none;
+    color: #222;
+}
+.menu-links ul li a:hover{
+    color: #999;
+}
+
+/* ----------Home Page---------- */
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.home-page .pref{
+    margin: 60px 0  30px 0;
+}
+.pref::before{
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    color: rgb(77, 189, 77);
+    background-color: rgb(77, 189, 77);
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: -6px;
+}
+.name{
+    font-size: 60px;
+    font-weight: 100;
+}
+.name-para{
+    margin: 10px 0;
+}
+.buttons{
+    margin: 10px 0;
+}
+.home-profile{
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    gap: 20px;
+}
+.home-profile-img{
+    overflow: hidden;
+    flex: 2;
+    height: 400px;
+    border-top-left-radius: 20px;
+}
+.home-profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-profile-desc{
+    flex: 5;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    text-align: left;
+    padding: 40px 30px;
+    position: relative;
+}
+.home-profile-desc h2{
+    font-size: 40px;
+    font-weight: 100;  
+}
+.home-profile-desc p{
+    margin: 20px 0; 
+    line-height: 20px;
+    color: #222;
+}
+.home-profile-desc small{
+    position: absolute;
+    bottom: 30px; 
+}
+
+/* -----------project-section---------- */
+.single-project{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 40px 30px;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+.project-image{
+    flex: 3;
+    border-radius: 9px;
+    overflow: hidden;
+}
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-desc{
+    flex: 5;
+}
+.project-desc h2{
+    margin-bottom:20px;
+    font-weight: 100;
+    font-size: 40px;
+}
+.project-desc p{
+    flex: 5;
+    margin-bottom:20px ;
+}
+
+/* ---------------skills------------ */
+.all-skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-img{
+    width: 19%;
+    /* height: 12rem; */
+    object-fit: cover;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* ----------worked-section---------- */
+.worked h5{
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #222;
+}
+.company-logos{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.company-logo{
+    background-color: #fff;
+    width: 24%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* ----------experience---------- */
+
+.past-experience{
+    padding: 40px 30px;
+    background-color: #fff;
+
+}
+.past-para{ 
+    line-height: 20px;
+    color: #222;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.company-exp{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 20px 0;
+    color: #222;
+    
+}
+.company-exp h6{
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.company-exp .year{
+    display: flex;
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+.company-exp .year p{
+    margin-right: 15px;
+
+}
+.company-exp-place{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.company-exp p{
+    opacity: 0.8;
+}
+/* --------------conatact-form----------------- */
+.contact-page form{
+    background-color: #fff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-page form .form-input{
+    padding: 4px 8px;
+    outline: none;
+    border: 1.5px solid #222;
+    color: #222;
+    opacity: 0.6;
+}
+.contact-page form .form-input::placeholder{
+    color: #222;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+#contact-button{
+    padding: 6px;
+    margin-top: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+    border: 1.5px solid #222;
+    cursor: pointer;
+}
+
+
+/* ---------------footer------------ */
+footer{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;  
+}
+footer p{
+    padding: 8px;
+    text-align: center;
+    opacity: 0.6;
+}
+ /* media query for tablet screen */
+ @media (max-width: 872px){
+    .menu-links{
+        display: none;
+    }
+
+    
+    
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
